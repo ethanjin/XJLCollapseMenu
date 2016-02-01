@@ -29,7 +29,7 @@
     NSArray *all=@[array1,array2,array3,array4];
     
     
-    XJLCollaspeMenu *menu=[[XJLCollaspeMenu alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 50) andArray:all Container:MENU_CONTAINER_TABLEVIEW];
+    XJLCollaspeMenu *menu=[[XJLCollaspeMenu alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 50) andArray:all];
     menu.delegate=self;
     [self.view addSubview:menu];
     

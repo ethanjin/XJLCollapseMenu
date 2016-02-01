@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-typedef NS_ENUM (NSInteger , MENU_TYPE){
-    MENU_CONTAINER_VIEW,
-    MENU_CONTAINER_TABLEVIEW
-};
 
 
 @protocol XJLCollaspeMenuDelegate <NSObject>
@@ -26,7 +22,7 @@ typedef NS_ENUM (NSInteger , MENU_TYPE){
 @interface XJLCollaspeMenu : UIView
 @property (assign,nonatomic) id<XJLCollaspeMenuDelegate> delegate;
 
--(id)initWithFrame:(CGRect)frame andArray:(NSArray *)array Container:(MENU_TYPE)_containerType;
+-(id)initWithFrame:(CGRect)frame andArray:(NSArray *)array;
 -(UIView *)getOpenViewAtIndex:(NSInteger)_index;
 
 

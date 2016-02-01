@@ -29,7 +29,7 @@
 }
 
 
--(id)initWithFrame:(CGRect)frame andArray:(NSArray *)array Container:(MENU_TYPE)_containerType{
+-(id)initWithFrame:(CGRect)frame andArray:(NSArray *)array{
     if (self=[super initWithFrame:frame]) {
         _labelsArray=[NSMutableArray array];
         self.clipsToBounds=YES;
